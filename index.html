@@ -1,3 +1,4 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
@@ -15,7 +16,7 @@ header{position:fixed;top:0;left:0;right:0;z-index:20;background:var(--paper);bo
 nav{display:flex;gap:6px;overflow-x:auto;padding:9px 0;max-width:760px;margin:auto;scrollbar-width:none}
 nav::-webkit-scrollbar{display:none}
 nav a{flex:1 0 auto;text-align:center;text-decoration:none;color:var(--ink);font-size:15px;padding:4px 13px;border:3px solid var(--ink);border-radius:999px;background:var(--paper);white-space:nowrap}
-nav a:nth-child(1){background:var(--coral)}nav a:nth-child(2){background:var(--yellow)}nav a:nth-child(3){background:var(--water)}nav a:nth-child(4){background:var(--green)}nav a:nth-child(5){background:var(--coral)}
+nav a:nth-child(1){background:var(--coral)}nav a:nth-child(2){background:var(--yellow)}nav a:nth-child(3){background:var(--water)}nav a:nth-child(4){background:var(--green)}nav a:nth-child(5){background:var(--coral)}nav a:nth-child(6){background:var(--yellow)}
 main{max-width:760px;margin:auto;padding:0 16px 48px}
 section{margin-top:34px}
 h2{font-size:22px;margin:0 0 14px;display:inline-block;background:var(--yellow);border:3px solid var(--ink);border-radius:14px;padding:2px 16px}
@@ -26,8 +27,7 @@ h2{font-size:22px;margin:0 0 14px;display:inline-block;background:var(--yellow);
 h1{font-size:30px;line-height:1.25;margin:18px 0 4px}
 h1 span{background:var(--coral);padding:0 8px;border-radius:10px;border:3px solid var(--ink);display:inline-block}
 .sub{margin:6px 0 14px}
-.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:16px}
-.chip{border:3px solid var(--ink);border-radius:999px;padding:0 12px;font-size:14px}
+.cake-t{width:.92em;height:.92em;vertical-align:-.08em;margin-left:10px;display:inline-block}
 .count{display:grid;grid-template-columns:1fr;gap:10px}
 .count div{border:3px solid var(--ink);border-radius:20px;padding:8px 0}
 .count b{display:block;font-size:34px;line-height:1.1}
@@ -38,7 +38,7 @@ h1 span{background:var(--coral);padding:0 8px;border-radius:10px;border:3px soli
 .route div{flex:1}
 .route small{display:block;font-size:13px}
 .route strong{font-size:20px}
-.route .mid{flex:0 0 auto;text-align:center;font-size:13px}
+.ic{width:1.25em;height:1.25em;vertical-align:-.28em;display:inline-block}.route .mid .ic{width:34px;height:22px;vertical-align:baseline}.route .mid{flex:0 0 auto;text-align:center;font-size:13px}
 .dash{border-top:3px dashed var(--ink);margin:10px 0}
 .info{display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:14px}
 .info span{display:block;font-size:12px}
@@ -60,7 +60,19 @@ h1 span{background:var(--coral);padding:0 8px;border-radius:10px;border:3px soli
 .tl h3{margin:0;font-size:18px}
 .tl p{margin:4px 0 0;font-size:14px}
 .tag{display:inline-block;font-size:12px;border:2.5px solid var(--ink);border-radius:999px;padding:0 9px;margin:6px 6px 0 0}
-.t-car{background:var(--coral)}.t-cable{background:var(--yellow)}.t-walk{background:var(--water)}.t-tbd{background:var(--green)}
+.meta{margin:10px 0 0;padding:10px 0 0;border-top:3px dashed var(--ink);display:grid;gap:7px;font-size:13px}
+.meta>div{display:grid;grid-template-columns:4.4em 1fr;gap:8px;align-items:start}
+.meta dt{opacity:.65}
+.meta dd{margin:0}
+.lk{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.lk a{color:var(--ink);text-decoration:none;border:3px solid var(--ink);border-radius:14px;padding:1px 12px;font-size:14px;background:var(--yellow)}
+.lk a:nth-child(2){background:var(--water)}
+.t-car{background:var(--coral)}.t-cable{background:var(--yellow)}.t-walk{background:var(--water)}.t-tbd{background:var(--green)}.t-cake{background:var(--yellow)}
+.pk{list-style:none;margin:10px 0 0;padding:10px 0 0;border-top:3px dashed var(--ink);display:grid;gap:8px}
+.pk a{display:block;text-decoration:none;color:var(--ink);border:3px solid var(--ink);border-radius:16px;padding:7px 12px;background:var(--paper)}
+.pk b{font-size:15px;display:block}
+.pk em{font-style:normal;font-size:12px;opacity:.6;display:block;margin:1px 0 3px}
+.pk s{text-decoration:none;font-size:13px;display:block}
 .must{position:absolute;right:-6px;top:-12px;background:var(--coral);border:3px solid var(--ink);border-radius:12px;font-size:14px;padding:0 10px}
 .pop{animation:pop .5s cubic-bezier(.34,1.56,.64,1) both}
 .pop li:nth-child(2){animation:pop .5s .08s cubic-bezier(.34,1.56,.64,1) both}
@@ -78,6 +90,13 @@ h1 span{background:var(--coral);padding:0 8px;border-radius:10px;border:3px soli
 .prog{font-size:14px;margin:0 0 10px}
 .bar{height:16px;border:3px solid var(--ink);border-radius:999px;overflow:hidden;margin-bottom:12px}
 .bar i{display:block;height:100%;width:0;background:var(--coral);transition:width .4s}
+.meta a{color:var(--ink)}
+.eat-t{font-size:14px;margin:0 0 14px}
+.eat{margin-bottom:14px}
+.eat h3{margin:7px 0 2px;font-size:19px}
+.eat .d{display:inline-block;border:3px solid var(--ink);border-radius:999px;padding:0 12px;font-size:14px;background:var(--paper)}
+.eat>p{margin:5px 0 0;font-size:14px}
+.eat .lk a:nth-child(2){background:var(--coral)}
 .stay{margin-bottom:14px}
 .stay h3{margin:6px 0 2px;font-size:19px}
 .stay .d{display:inline-block;border:3px solid var(--ink);border-radius:999px;padding:0 12px;font-size:14px}
@@ -102,12 +121,12 @@ footer{text-align:center;font-size:14px;margin-top:36px}
 </head>
 <body>
 <header><nav>
-<a href="#home">首頁</a><a href="#ride">交通</a><a href="#plan">行程</a><a href="#todo">待辦</a><a href="#stay">住宿</a>
+<a href="#home">首頁</a><a href="#ride">交通</a><a href="#plan">行程</a><a href="#eat">餐飲</a><a href="#todo">待辦</a><a href="#stay">住宿</a>
 </nav></header>
 <main>
 <section id="home" class="hero">
 <div class="scene">
-<svg viewBox="0 0 360 320" role="img" aria-label="日月潭九族文化村纜車、Volvo V60 與全家五口的插圖">
+<svg viewBox="0 0 360 320" role="img" aria-label="日月潭九族文化村纜車、黑色 Volvo V60 與全家五口的插圖，Sina 手上抱著白色小狗玩偶">
 <g class="cloud"><path d="M30 34h56a14 14 0 0 0-8-22 18 18 0 0 0-34 4 11 11 0 0 0-14 18z" fill="#FFFCF6" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"/></g>
 <g class="cloud b"><path d="M250 30h54a12 12 0 0 0-7-19 16 16 0 0 0-30 3 10 10 0 0 0-17 16z" fill="#FFFCF6" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"/></g>
 <circle cx="318" cy="64" r="0" fill="#F6D27A"/>
@@ -132,9 +151,8 @@ footer{text-align:center;font-size:14px;margin-top:36px}
 </g></g>
 </svg>
 </div>
-<h1>Sina <span>慶生</span>之旅</h1>
+<h1>Sina <span>慶生</span>之旅<svg class="cake-t" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c1.7 1.7 1.7 3.2 0 4-1.7-.8-1.7-2.3 0-4z" fill="#F6D27A" stroke="#3E3A39" stroke-width="1.7" stroke-linejoin="round"/><path d="M12 6.4v3.4" stroke="#3E3A39" stroke-width="1.9" stroke-linecap="round"/><rect x="3.2" y="9.8" width="17.6" height="11" rx="3.4" fill="#F2A497" stroke="#3E3A39" stroke-width="2.3" stroke-linejoin="round"/><path d="M3.5 14.1q2.15 2.4 4.3 0t4.3 0 4.3 0 4.1 0" fill="none" stroke="#3E3A39" stroke-width="2.1" stroke-linecap="round"/></svg></h1>
 <p class="sub">12/12 – 12/14 · 日月潭 × 埔里 · 三天兩夜</p>
-<div class="chips" id="chips"></div>
 <div class="card">
 <p class="count-t">距離出發還有</p>
 <div class="count" id="count"><div style="background:var(--coral)"><b>--</b><small>天</small></div></div>
@@ -144,7 +162,7 @@ footer{text-align:center;font-size:14px;margin-top:36px}
 <section id="ride">
 <h2>交通卡片</h2>
 <div class="card ticket">
-<div class="route"><div><small>出發</small><strong>家裡</strong></div><div class="mid">🚗<br>自駕</div><div style="text-align:right"><small>第一站</small><strong>九族文化村</strong></div></div>
+<div class="route"><div><small>出發</small><strong>家裡</strong></div><div class="mid"><svg class="ic" viewBox="0 0 32 20" aria-hidden="true"><path d="M3 15v-4l4-1 3-5h10l4 5 4 1v4z" fill="#3E3A39" stroke="#3E3A39" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M11 6.5h4v3.5h-6zM17 6.5h3l2.5 3.5H17z" fill="#A8D3E6" stroke-width="1.6" stroke="#3E3A39" stroke-linejoin="round"/><circle cx="9" cy="15.5" r="3" fill="#FFFCF6" stroke="#3E3A39" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="24" cy="15.5" r="3" fill="#FFFCF6" stroke="#3E3A39" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/></svg><br>自駕</div><div style="text-align:right"><small>第一站</small><strong>九族文化村</strong></div></div>
 <div class="dash"></div>
 <div class="info"><div><span>日期</span>12/12（六）</div><div><span>車輛</span>Volvo V60</div><div><span>乘客</span>5 人（含 2 位小朋友）</div><div><span>出發時間</span>早上 8:30</div></div>
 </div>
@@ -154,6 +172,39 @@ footer{text-align:center;font-size:14px;margin-top:36px}
 <h2>每日行程</h2>
 <div class="tabs" role="tablist" id="tabs"></div>
 <div id="day"></div>
+</section>
+
+<section id="eat">
+<h2>餐飲</h2>
+<p class="eat-t">12/13（週日）Sina 生日晚餐的兩個選擇，讓大家挑一間。兩間都在埔里春天度假村附近、週日晚上有營業。</p>
+
+<div class="card eat" style="background:var(--green)">
+<span class="d">距度假村約 2.9 公里・車程約 8 分</span>
+<h3>山中小廚房</h3>
+<p><b>特色：</b>無菜單合菜為主，也可單點。店家主打家庭聚餐與親子客層，一桌菜一起上，阿嬤跟兩個小孩不用各點各的；用埔里在地食材，有蕩食選項，也接團體桌菜與包場。空間寬鬆安靜，適合慢慢吃、唱生日歌。</p>
+<dl class="meta">
+<div><dt>營業</dt><dd>週四〜週二 11:00–14:30、17:30–20:30<br>週三公休（我們去的 12/13 有開）</dd></div>
+<div><dt>電話</dt><dd><a href="tel:+886492803196">049-280-3196</a></dd></div>
+<div><dt>地址</dt><dd>南投縣埔里鎮西康路119號</dd></div>
+<div><dt>評價</dt><dd>Google 4.5（458 則）</dd></div>
+<div><dt>提醒</dt><dd>合菜與包廂建議先訂位，晚餐 20:30 收</dd></div>
+</dl>
+<div class="lk"><a href="https://www.google.com/maps/place/?q=place_id:ChIJnbfDwufZaDQRoZc4XbOXwMo" target="_blank" rel="noopener">Google 地圖</a><a href="https://www.facebook.com/wuwu88" target="_blank" rel="noopener">粉絲專頁</a></div>
+</div>
+
+<div class="card eat" style="background:var(--water)">
+<span class="d">距度假村約 0.1 公里・走路就到</span>
+<h3>家味香客家廚房</h3>
+<p><b>特色：</b>埔里知名的客家菜老店，客家小炒、釘蛤這類下飯菜為主，份量實在、口味是大人小孩都熟悉的台式家常路線。評價人數極多（兩千多則），品質穩定；最大優勢是就在度假村旁邊，吃完走路回房切蛋糕，完全不用再開車。</p>
+<dl class="meta">
+<div><dt>營業</dt><dd>週五〜週三 11:00–15:00、17:00–21:00<br>週四公休（我們去的 12/13 有開）</dd></div>
+<div><dt>電話</dt><dd><a href="tel:+886492984268">049-298-4268</a></dd></div>
+<div><dt>地址</dt><dd>南投縣埔里鎮中山路一段237-8號</dd></div>
+<div><dt>評價</dt><dd>Google 4.6（2,387 則）</dd></div>
+<div><dt>提醒</dt><dd>假日用餐時段人潮多，建議先電話訂位</dd></div>
+</dl>
+<div class="lk"><a href="https://www.google.com/maps/place/?q=place_id:ChIJ8Uk776HZaDQRh0vdtGhCA14" target="_blank" rel="noopener">Google 地圖</a><a href="http://www.jws2984268.com/" target="_blank" rel="noopener">官網</a></div>
+</div>
 </section>
 
 <section id="todo">
@@ -167,12 +218,13 @@ footer{text-align:center;font-size:14px;margin-top:36px}
 
 <section id="stay">
 <h2>住宿資訊</h2>
-<div class="card stay" style="background:var(--water)"><span class="d">12/12 – 12/13 · 1 晚</span><h3>日月潭 潭日月</h3><p>Day 1 下午 check-in，晚上到日月潭老街用餐。</p><p>✅ 訂房已確定</p><a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%97%A5%E6%9C%88%E6%BD%AD+%E6%BD%AD%E6%97%A5%E6%9C%88" target="_blank" rel="noopener">在地圖開啟</a></div>
-<div class="card stay" style="background:var(--green)"><span class="d">12/13 – 12/14 · 1 晚</span><h3>埔里春天度假村</h3><p>Day 2 轉移到埔里入住。</p><p>✅ 訂房已確定</p><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%9F%94%E9%87%8C%E6%98%A5%E5%A4%A9%E5%BA%A6%E5%81%87%E6%9D%91" target="_blank" rel="noopener">在地圖開啟</a></div>
+<div class="card stay" style="background:var(--water)"><span class="d">12/12 – 12/13 · 1 晚</span><h3>日月潭 潭日月</h3><p>Day 1 下午 check-in，晚上到日月潭老街用餐。</p><p><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.5" fill="#B9DAA5" stroke="#3E3A39" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M7.5 12.5l3 3 6-6.5" fill="none" stroke="#3E3A39" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-width="2.6"/></svg> 訂房已確定</p><a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%97%A5%E6%9C%88%E6%BD%AD+%E6%BD%AD%E6%97%A5%E6%9C%88" target="_blank" rel="noopener">在地圖開啟</a></div>
+<div class="card stay" style="background:var(--green)"><span class="d">12/13 – 12/14 · 1 晚</span><h3>埔里春天度假村</h3><p>Day 2 轉移到埔里入住。</p><p><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.5" fill="#B9DAA5" stroke="#3E3A39" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M7.5 12.5l3 3 6-6.5" fill="none" stroke="#3E3A39" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-width="2.6"/></svg> 訂房已確定</p><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%9F%94%E9%87%8C%E6%98%A5%E5%A4%A9%E5%BA%A6%E5%81%87%E6%9D%91" target="_blank" rel="noopener">在地圖開啟</a></div>
 </section>
-<footer>🎂 祝 Sina 生日快樂，一家人平安玩得開心 🚠</footer>
+<footer><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5c1.6 1.6 1.6 3 0 3.8-1.6-.8-1.6-2.2 0-3.8z" fill="#F6D27A" stroke="#3E3A39" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.6"/><path d="M12 7v3" stroke="#3E3A39" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.8"/><rect x="3.5" y="10" width="17" height="10.5" rx="3" fill="#F2A497" stroke="#3E3A39" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M3.8 14.2q2.1 2.3 4.2 0t4 0 4.2 0 4 0" fill="none" stroke="#3E3A39" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.8"/></svg> 祝 Sina 生日快樂，一家人平安玩得開心 <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M1 3l22 3" fill="none" stroke="#3E3A39" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.8"/><path d="M12 4.6V9" stroke="#3E3A39" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.8"/><rect x="5" y="9" width="14" height="11.5" rx="3.5" fill="#F2A497" stroke="#3E3A39" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/><rect x="8" y="12" width="8" height="4.5" rx="1.5" fill="#FFFCF6" stroke="#3E3A39" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.6"/></svg></footer>
 </main>
 <script>
+const IC={'car': '<svg class="ic" viewBox="0 0 32 20" aria-hidden="true"><path d="M3 15v-4l4-1 3-5h10l4 5 4 1v4z" fill="#3E3A39" stroke="#3E3A39" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M11 6.5h4v3.5h-6zM17 6.5h3l2.5 3.5H17z" fill="#A8D3E6" stroke-width="1.6" stroke="#3E3A39" stroke-linejoin="round"/><circle cx="9" cy="15.5" r="3" fill="#FFFCF6" stroke="#3E3A39" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="24" cy="15.5" r="3" fill="#FFFCF6" stroke="#3E3A39" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/></svg>', 'cake': '<svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5c1.6 1.6 1.6 3 0 3.8-1.6-.8-1.6-2.2 0-3.8z" fill="#F6D27A" stroke="#3E3A39" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.6"/><path d="M12 7v3" stroke="#3E3A39" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.8"/><rect x="3.5" y="10" width="17" height="10.5" rx="3" fill="#F2A497" stroke="#3E3A39" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M3.8 14.2q2.1 2.3 4.2 0t4 0 4.2 0 4 0" fill="none" stroke="#3E3A39" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.8"/></svg>', 'party': '<svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21l5-14 9 9z" fill="#F6D27A" stroke="#3E3A39" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="14" cy="4.5" r="1.6" fill="#A8D3E6" stroke="#3E3A39" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5"/><circle cx="20" cy="9.5" r="1.6" fill="#F2A497" stroke="#3E3A39" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5"/><path d="M13 9.5q3-.5 4-3.5M16 13q1.5-.5 4 0" fill="none" stroke="#3E3A39" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.8"/></svg>'};
 const INK='#3E3A39',FACE='#FFE9D6';
 const folks=[
  {n:'阿嬤',x:108,s:.92,c:'#B9DAA5',h:'#D9D4CC',t:'g'},
@@ -185,7 +237,7 @@ document.getElementById('folks').innerHTML=folks.map((p,i)=>{
  let back=p.t=='m'?`<rect x="-14" y="-58" width="28" height="30" rx="11" fill="${p.h}" ${st}/>`:'';
  let top=`<path d="M-12.5 -47A12.5 12.5 0 0 1 12.5 -47Q0 -53 -12.5 -47z" fill="${p.h}" ${st}/>`;
  if(p.t=='g')top+=`<circle cx="0" cy="-62" r="5.5" fill="${p.h}" ${st}/>`;
- if(p.t=='s')top+=`<circle cx="-16" cy="-43" r="5" fill="${p.h}" ${st}/><circle cx="16" cy="-43" r="5" fill="${p.h}" ${st}/><path d="M-8 -57L0 -78L8 -57z" fill="#F6D27A" ${st}/><circle cx="0" cy="-79" r="3" fill="#F2A497" ${st}/>`;
+ if(p.t=='s')top+=`<circle cx="-16" cy="-43" r="5" fill="${p.h}" ${st}/><circle cx="16" cy="-43" r="5" fill="${p.h}" ${st}/><path d="M-8 -57L0 -78L8 -57z" fill="#F6D27A" ${st}/><circle cx="0" cy="-79" r="3" fill="#F2A497" ${st}/>`+`<path d="M9 -31L17 -26" stroke="${INK}" stroke-width="7" stroke-linecap="round" fill="none"/><path d="M9 -31L17 -26" stroke="${p.c}" stroke-width="3" stroke-linecap="round" fill="none"/><g transform="translate(21,-19)"><rect x="-13.5" y="-15" width="6.5" height="18" rx="3.2" transform="rotate(14 -10.5 -15)" fill="#FFFCF6" ${st}/><rect x="7" y="-15" width="6.5" height="18" rx="3.2" transform="rotate(-14 10.5 -15)" fill="#FFFCF6" ${st}/><ellipse cx="0" cy="1" rx="8.5" ry="7.5" fill="#FFFCF6" ${st}/><circle cx="-4.5" cy="7" r="2.6" fill="#FFFCF6" ${st}/><circle cx="4.5" cy="7" r="2.6" fill="#FFFCF6" ${st}/><rect x="-5.5" y="-4.5" width="11" height="4.5" rx="2.2" fill="#F2A497" stroke="${INK}" stroke-width="2"/><circle cx="0" cy="-9" r="8" fill="#FFFCF6" ${st}/><circle cx="-3" cy="-10" r="1.5" fill="${INK}"/><circle cx="3" cy="-10" r="1.5" fill="${INK}"/><ellipse cx="0" cy="-6" rx="1.7" ry="1.2" fill="${INK}"/></g>`;
  return `<g transform="translate(${p.x},246) scale(${p.s})"><g class="bob" style="--d:${(i*.35).toFixed(2)}s">${back}
  <rect x="-8" y="-10" width="6" height="10" rx="2" fill="#FFFCF6" ${st}/><rect x="2" y="-10" width="6" height="10" rx="2" fill="#FFFCF6" ${st}/>
  <rect x="-11" y="-36" width="22" height="28" rx="9" fill="${p.c}" ${st}/>
@@ -193,12 +245,11 @@ document.getElementById('folks').innerHTML=folks.map((p,i)=>{
  <circle cx="-4.5" cy="-46" r="1.8" fill="${INK}"/><circle cx="4.5" cy="-46" r="1.8" fill="${INK}"/>
  <circle cx="-8" cy="-42" r="2.2" fill="#F2A497"/><circle cx="8" cy="-42" r="2.2" fill="#F2A497"/>
  <path d="M-2.5 -41q2.5 2.5 5 0" fill="none" stroke="${INK}" stroke-width="1.8" stroke-linecap="round"/></g></g>`}).join('');
-document.getElementById('chips').innerHTML=folks.map((p,i)=>`<span class="chip" style="background:${p.c}">${p.n}${p.n=='小澈'?' 7歲':p.n=='Sina'?' 5歲 🎂':''}</span>`).join('');
 
 // countdown
 const target=new Date(2026,11,12,0,0,0);
 function tick(){const el=document.getElementById('count').children;let d=target-new Date();
- if(d<=0){document.getElementById('count').innerHTML='<div style="grid-column:1/-1;background:var(--yellow)"><b style="font-size:24px">出發囉！🚗</b></div>';return}
+ if(d<=0){document.getElementById('count').innerHTML='<div style="grid-column:1/-1;background:var(--yellow)"><b style="font-size:24px">出發囉！'+IC.car+'</b></div>';return}
  el[0].querySelector('b').textContent=Math.ceil(d/86400000)}
 tick();setInterval(tick,30000);
 
@@ -206,29 +257,45 @@ tick();setInterval(tick,30000);
 const days=[
  {k:'D1',date:'12/12',w:'六',title:'出發・九族・日月潭夜晚',items:[
   {t:'08:30',h:'從家裡出發',p:'全家上車，Volvo V60 啟程！',tags:[['自駕','car']]},
-  {t:'白天',h:'九族文化村',p:'纜車、遊樂設施與原住民文化，小朋友的快樂時光。',tags:[['纜車','cable'],['自駕','car']],must:1,c:'var(--yellow)'},
+  {t:'白天',h:'九族文化村',p:'遊樂設施與原住民文化，小朋友的快樂時光。持入園票可免費搭乘日月潭纜車來回（天候或保養停駛不另退費）。',tags:[['纜車','cable'],['自駕','car']],must:1,c:'var(--yellow)',
+   info:[['營業','週六 09:30–17:30｜16:00 前入園、售票至 15:00'],['票價','全票 1,100／學生 980／兒童 880／博幼 550；未滿 3 歲或身高不足 100cm 免費'],['停車','轎車 150 元／機車 30 元'],['地址','南投縣魚池鄉大林村金天巷45號']],
+   links:[['官網','https://www.nine.com.tw/'],['Google 地圖','https://www.google.com/maps/search/?api=1&amp;query=%E4%B9%9D%E6%97%8F%E6%96%87%E5%8C%96%E6%9D%91']]},
   {t:'下午',h:'入住 日月潭 潭日月',p:'Check-in、休息一下。',tags:[['自駕','car']],c:'var(--water)'},
   {t:'晚上',h:'日月潭老街晚餐',p:'逛老街、吃在地小吃。',tags:[['交通待定','tbd']],must:1,c:'var(--coral)'}]},
- {k:'D2',date:'12/13',w:'日',title:'行程未定・轉往埔里',items:[
+ {k:'D2',date:'12/13',w:'日',title:'轉往埔里・Sina 慶生的一天',items:[
   {t:'上午',h:'日月潭退房',p:'退房後出發（暫定）。',tags:[['自駕','car']]},
-  {t:'白天',h:'行程未定',p:'想去哪裡玩？之後一起補上這一天。',tags:[['待定','tbd']],c:'var(--green)'},
-  {t:'下午／晚上',h:'入住 埔里春天度假村',p:'Check-in、享受度假村。',tags:[['自駕','car']],c:'var(--water)'}]},
+  {t:'上午～中午',h:'行程未定・午餐',p:'這段還沒排，含中午用餐，之後一起補上。',tags:[['待定','tbd']],c:'var(--green)'},
+  {t:'下午',h:'賴爺爺蜜蜂小森林',p:'宏基蜜蜂生態農場的新園區。看得到真的蜂巢，有解説人員介紹蜜蜂生態，可以試吃不同花種的蜜與花粉；蜜巢冰淇淋是招牌，伴手禮賣場也在這裡。小澈和 Sina 會很有興趣。',tags:[['自駕','car'],['生態導覽','walk']],c:'var(--green)',
+   info:[['營業','每日 08:00–17:00'],['地址','南投縣埔里鎮慈恩街99號'],['電話','049-298-0851'],['提醒','園區有停車場；導覽為固定場次，在意的話可先電詢時間。離 Feeling18 約 3 公里、車程 10 分']],
+   links:[['Google 地圖','https://www.google.com/maps/place/?q=place_id:ChIJMTdH5cvZaDQRG0hao5JkJcc']]},
+  {t:'下午',h:'Feeling18 LAB－烘焙研究所',p:'從蜜蜂小森林過來約 10 分鐘。讓 Sina 自己挑今晚的生日蛋糕，座位區寬敞，咖啡與麵包也可以先吃一輪。',tags:[['自駕','car'],['選蛋糕','cake']],must:1,c:'var(--yellow)',
+   info:[['營業','週日 10:00–19:00'],['地址','南投縣埔里鎮桃南路69號'],['電話','049-291-5218'],['提醒','整顆蛋糕建議先去電確認当日款式、尺寸與是否需預訂']],
+   links:[['官網','https://www.feeling18c.com/products.php'],['Google 地圖','https://www.google.com/maps/place/?q=place_id:ChIJp4UeZtHZaDQROCcdaAH-NPw']]},
+  {t:'働晚',h:'入住 埔里春天度假村',p:'Check-in、放行李，蛋糕記得先冰起來。',tags:[['自駕','car']],c:'var(--water)'},
+  {t:'晚上',h:'Sina 生日晚餐',p:'以下均在度假村 3 公里內、週日晚上有營業。底下點選一家訂位，吃完回房切蛋糕。',tags:[['自駕','car'],['餐廳待選','tbd']],must:1,c:'var(--coral)',
+   picks:[
+    ['燒肉MEN 埔里店','約 1.9km｜週日 11:30–22:00｜049-299-0077','時間最彈性的一家，桌邊燒肉小朋友看得開心，慣例會幫壽星帶位子建議先訂。','https://www.google.com/maps/place/?q=place_id:ChIJaRN8u4rZaDQRzLGVvyOrzxE'],
+    ['山中小廚房','約 2.9km｜週日 17:30–20:30｜049-280-3196','無菜單合菜，主打家庭聚餐與親子，阿嬤跟兩個小孩都好點餐。','https://www.google.com/maps/place/?q=place_id:ChIJnbfDwufZaDQRoZc4XbOXwMo'],
+    ['住山煮海 SUNHAI','約 2.6km｜週日 17:00–19:30｜0911-078-881','澎湖小卷專賣，評價最高的一家；每日限量售完為止，要早點到。','https://www.google.com/maps/place/?q=place_id:ChIJCZmJhWvZaDQRzTh4QXsNNwE'],
+    ['Dream In','約 2.3km｜週日 17:00–21:00｜049-242-3393','明亮現代的港式創意料理，套餐制；座位少，建議一定要訂位。','https://www.google.com/maps/place/?q=place_id:ChIJg6wpI6jZaDQRWvOyiGMcF24'],
+    ['家味香客家廚房','約 0.1km｜週日 17:00–21:00｜049-298-4268','就在度假村旁邊，走路就到；客家菜份量實在，最省交通時間。','https://www.google.com/maps/place/?q=place_id:ChIJ8Uk776HZaDQRh0vdtGhCA14'],
+    ['Restaurant Henry 亨利廚坊','約 2.6km｜營業時間請先電詢｜049-299-2547','在地西餐，想要排餐、切蛋糕的氣氛可以列入考慮。','https://www.google.com/maps/place/?q=place_id:ChIJGUKzt3XZaDQR_TyKu8Ak77Y']]}]},
  {k:'D3',date:'12/14',w:'一',title:'行程未定・回家',items:[
   {t:'上午',h:'埔里春天度假村退房',p:'整理行李，檢查有沒有忘東西。',tags:[['自駕','car']]},
   {t:'白天',h:'行程未定',p:'回程路上可安排順遊景點。',tags:[['待定','tbd']],c:'var(--green)'},
-  {t:'傍晚',h:'平安回家',p:'Sina 生日旅行圓滿結束 🎉',tags:[['自駕','car']],c:'var(--coral)'}]}];
+  {t:'傍晚',h:'平安回家',p:'Sina 生日旅行圓滿結束 '+IC.party,tags:[['自駕','car']],c:'var(--coral)'}]}];
 const tabs=document.getElementById('tabs'),box=document.getElementById('day');
 tabs.innerHTML=days.map((d,i)=>`<button class="tab" role="tab" aria-selected="${i==0}" data-i="${i}"><small>${d.k}</small><b>${d.date}</b><small>週${d.w}</small></button>`).join('');
 function show(i){
  [...tabs.children].forEach((b,j)=>b.setAttribute('aria-selected',j==i));
  const d=days[i];
- box.innerHTML=`<p class="day-h">${d.k}｜${d.title}</p><ul class="tl pop">`+d.items.map(x=>`<li style="--c:${x.c||'var(--paper)'}"><div class="card">${x.must?'<span class="must">必去</span>':''}<span class="time">${x.t}</span><h3>${x.h}</h3><p>${x.p}</p>${x.tags.map(g=>`<span class="tag t-${g[1]}">${g[0]}</span>`).join('')}</div></li>`).join('')+'</ul>';
+ box.innerHTML=`<p class="day-h">${d.k}｜${d.title}</p><ul class="tl pop">`+d.items.map(x=>`<li style="--c:${x.c||'var(--paper)'}"><div class="card">${x.must?'<span class="must">必去</span>':''}<span class="time">${x.t}</span><h3>${x.h}</h3><p>${x.p}</p>${x.tags.map(g=>`<span class="tag t-${g[1]}">${g[0]}</span>`).join('')}${x.info?'<dl class="meta">'+x.info.map(m=>`<div><dt>${m[0]}</dt><dd>${m[1]}</dd></div>`).join('')+'</dl>':''}${x.picks?'<ul class="pk">'+x.picks.map(k=>`<li><a href="${k[3]}" target="_blank" rel="noopener"><b>${k[0]}</b><em>${k[1]}</em><s>${k[2]}</s></a></li>`).join('')+'</ul>':''}${x.links?'<div class="lk">'+x.links.map(l=>`<a href="${l[1]}" target="_blank" rel="noopener">${l[0]}</a>`).join('')+'</div>':''}</div></li>`).join('')+'</ul>';
 }
 tabs.addEventListener('click',e=>{const b=e.target.closest('.tab');if(b)show(+b.dataset.i)});
 show(0);
 
 // todos
-const list=['九族文化村門票／纜車票','車子檢查、加油','小朋友暈車藥與零食','大家的藥品與保暖衣物','12 月山區偏冷，帶外套','Sina 生日蛋糕與小禮物','健保卡、證件'];
+const list=['九族文化村門票／纜車票','車子檢查、加油','小朋友暈車藥與零食','大家的藥品與保暖衣物','12/13 生日晚餐訂位','生日蛋糕是否需預訂（電 Feeling18）','生日蠕燭、打火機','12 月山區偏冷，帶外套','Sina 的生日小禮物','健保卡、證件'];
 let saved={};try{saved=JSON.parse(localStorage.getItem('sina-todo2')||'{}')}catch(e){}
 const ul=document.getElementById('todos');
 ul.innerHTML=list.map((t,i)=>`<li><label><input type="checkbox" data-i="${i}" ${saved[i]?'checked':''}><span>${t}</span></label></li>`).join('');
@@ -238,3 +305,5 @@ prog();
 </script>
 </body>
 </html>
+
+</body></html>
